@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/matchWrap_"
+    android:background="@android:drawable/editbox_background"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/lblMovementItemName"
+        style="@style/mainText_"
+        android:text="Passive Hang" />
+</LinearLayout>

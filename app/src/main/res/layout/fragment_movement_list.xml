@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchMatch_">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recMovementList"
+        style="@style/matchMatch_"
+        android:layout_above="@id/bottomNavMovements"
+        android:visibility="invisible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:listitem="@layout/item_movement" />
+
+    <ProgressBar
+        android:id="@+id/proMovementList"
+        style="@style/progress_"
+        android:layout_centerInParent="true" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavMovements"
+        style="@style/BottomBar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/blue_01"
+        app:itemIconTint="@drawable/bottom_bar_focus_colors"
+        app:itemTextColor="@drawable/bottom_bar_focus_colors"
+        app:menu="@menu/bottom_nav" />
+</RelativeLayout>

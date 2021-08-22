@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movementListFragment">
+
+    <fragment
+        android:id="@+id/reminderDetailFragment"
+        android:name="master.training.reminder_demo.ReminderDetailFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_reminder_detail" />
+    <fragment
+        android:id="@+id/reminderListFragment"
+        android:name="master.training.reminder_demo.ReminderListFragment"
+        android:label="ReminderListFragment" />
+    <fragment
+        android:id="@+id/movementListFragment"
+        android:name="master.training.reminder_demo.movementlist.MovementListFragment"
+        android:label="MovementListFragment">
+        <action
+            android:id="@+id/action_movementListFragment_to_reminderListFragment"
+            app:destination="@id/reminderListFragment"
+            app:enterAnim="@anim/fade_in_shadow"
+            app:exitAnim="@anim/fade_out" />
+
+    </fragment>
+</navigation>

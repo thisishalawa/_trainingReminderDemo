@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/movementListFragment"
+        android:icon="@android:drawable/bottom_bar"
+        android:title="Movements" />
+
+    <item
+        android:id="@+id/reminderListFragment"
+        android:icon="@android:drawable/bottom_bar"
+        android:title="Reminders" />
+
+</menu>
